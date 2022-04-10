@@ -38,7 +38,7 @@ namespace Laba4_N17
         {
             //установка размеров
             int i;
-            DataTable matr = new DataTable("matr");
+            DataTable matr = new DataTable();
             DataColumn[] cols = new DataColumn[nColumn];
             for (i = 0; i < nColumn; i++)
             {
@@ -47,13 +47,9 @@ namespace Laba4_N17
             }
             for (i = 0; i < nRow; i++)
             {
-                DataRow newRow;
-                newRow = matr.NewRow();
-                matr.Rows.Add(newRow);
+                matr.Rows.Add(matr.NewRow());
             }
             dgv.DataSource = matr;
-            for (i = 0; i < nColumn; i++)
-                dgv.Columns[i].Width = 30;
             // занесение значений
             for (i = 0; i < nRow; i++)
             {

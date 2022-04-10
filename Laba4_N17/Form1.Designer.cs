@@ -42,10 +42,12 @@
             this.dataGridViewMain.AllowUserToDeleteRows = false;
             this.dataGridViewMain.AllowUserToResizeColumns = false;
             this.dataGridViewMain.AllowUserToResizeRows = false;
+            this.dataGridViewMain.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridViewMain.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewMain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewMain.Location = new System.Drawing.Point(12, 12);
             this.dataGridViewMain.Name = "dataGridViewMain";
-            this.dataGridViewMain.RowHeadersWidth = 30;
+            this.dataGridViewMain.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dataGridViewMain.Size = new System.Drawing.Size(426, 426);
             this.dataGridViewMain.TabIndex = 0;
             // 
@@ -53,11 +55,15 @@
             // 
             this.dataGridViewRes.AllowUserToAddRows = false;
             this.dataGridViewRes.AllowUserToDeleteRows = false;
+            this.dataGridViewRes.AllowUserToResizeColumns = false;
+            this.dataGridViewRes.AllowUserToResizeRows = false;
+            this.dataGridViewRes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridViewRes.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewRes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewRes.Location = new System.Drawing.Point(495, 12);
             this.dataGridViewRes.Name = "dataGridViewRes";
             this.dataGridViewRes.ReadOnly = true;
-            this.dataGridViewRes.RowHeadersWidth = 30;
+            this.dataGridViewRes.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dataGridViewRes.Size = new System.Drawing.Size(426, 426);
             this.dataGridViewRes.TabIndex = 2;
             this.dataGridViewRes.Visible = false;

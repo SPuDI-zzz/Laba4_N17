@@ -37,22 +37,15 @@ namespace Laba4_N17
             {
                 buttonTask.Visible = true;
                 int i;
-                DataTable matr = new DataTable("matr");
+                DataTable matr = new DataTable();
                 DataColumn[] cols = new DataColumn[n];
                 for (i = 0; i < n; i++)
                 {
                     cols[i] = new DataColumn(i.ToString());
                     matr.Columns.Add(cols[i]);
-                }
-                for (i = 0; i < n; i++)
-                {
-                    DataRow newRow;
-                    newRow = matr.NewRow();
-                    matr.Rows.Add(newRow);
+                    matr.Rows.Add(matr.NewRow());
                 }
                 dataGridViewMain.DataSource = matr;
-                for (i = 0; i < n; i++)
-                    dataGridViewMain.Columns[i].Width = 30;               
             }
             else
             {   
