@@ -21,7 +21,7 @@ namespace Laba4_N17
         private void textBoxMain_TextChanged(object sender, EventArgs e)
         {
             //установка размера матрицы и DataGridView
-            if (int.TryParse(textBoxMain.Text, out n) && n < 25)
+            if (int.TryParse(textBoxMain.Text, out n) && n < 25 && n > 0)
             {
                 buttonTask.Visible = true;
                 int i;
